@@ -1,0 +1,16 @@
+tìm kiếm sinh viên theo mã
+SELECT * FROM students WHERE StudentRegno = 'B1909925';
+
+số lượng sinh viên mỗi phòng
+SELECT department, COUNT(*) as totalStudents
+FROM students
+GROUP BY department;
+
+truy vấn số lượng sinh viên theo khoa. kì
+SELECT department, semester, COUNT(*) as totalStudents
+FROM students
+GROUP BY department, semester;
+
+
+truy vấn danh sách sinh viên có cgpa >8
+SELECT * FROM students WHERE cgpa > 8;
